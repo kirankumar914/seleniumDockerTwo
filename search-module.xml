@@ -1,0 +1,33 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="search-module" parallel="tests">
+
+    <test name="search-module for given keyword Java">
+        <parameter name="keyword" value="java"/>
+        <classes>
+            <class name="com.demoaut.tests.SearchWordsTest"/>
+        </classes>
+    </test>
+
+    <test name="search-module for given keyword QA">
+        <parameter name="keyword" value="qa"/>
+        <classes>
+            <class name="com.demoaut.tests.SearchWordsTest"/>
+        </classes>
+    </test>
+
+    <test name="search-module for given keyword automation">
+        <parameter name="keyword" value="automation"/>
+        <classes>
+            <class name="com.demoaut.tests.SearchWordsTest"/>
+        </classes>
+    </test>
+
+    <test name="search-module for given keyword docker">
+        <parameter name="keyword" value="docker"/>
+        <classes>
+            <class name="com.demoaut.tests.SearchWordsTest"/>
+        </classes>
+    </test>
+
+</suite>
